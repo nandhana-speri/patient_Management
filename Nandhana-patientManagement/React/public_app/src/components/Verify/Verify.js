@@ -6,7 +6,7 @@ import CertificateDetailsModal from './modal';
 import { setErrorMessage, setSuccessMessage } from '../../action';
 import { useDispatch, useSelector } from 'react-redux';
 
-function consultationVerify() {
+function ConsultationVerify() {
   const [showModal, setShowModal] = useState(false);
   const dispatch = useDispatch();
   const containerStyle = {
@@ -133,4 +133,4 @@ function consultationVerify() {
   );
 }
 
-export default consultationVerify;
+export default ConsultationVerify;
