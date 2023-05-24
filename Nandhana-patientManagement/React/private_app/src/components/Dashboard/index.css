@@ -1,0 +1,261 @@
+.cards {
+  background: #fff;
+  border-radius: 3px;
+  overflow: hidden;
+  height: 250px;
+  width: 350px;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
+  padding: 15px;
+}
+
+a {
+  color: #4488ff;
+}
+
+.titles {
+  font-size: 18px;
+  display: block;
+  font-weight: 600;
+  padding: 5px 0;
+  line-height: 30px;
+}
+
+p {
+  display: block;
+  padding: 5px 0;
+}
+
+input[type='text'] {
+  display: block;
+  height: 36px;
+  line-height: 36px;
+  width: 100%;
+  padding: 0 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+}
+
+.topbar {
+  height: 66px;
+  width: calc(100% - 200px);
+  position: fixed;
+  top: 0;
+  left: 200px;
+  overflow: visible;
+}
+
+.topbar input {
+  margin: 0;
+  float: left;
+  width: calc(50% - 80px);
+  border: none;
+  background-size: 24px;
+  background-repeat: no-repeat;
+  background-position: 0 center;
+  padding: 0 0 0 38px;
+}
+
+.topbar .logos {
+  height: 36px;
+  width: 36px;
+  background: #4488ff;
+  display: block;
+  float: left;
+  margin: 0 62px;
+  border-radius: 50%;
+}
+
+.topbar .rightSide {
+  float: right;
+  width: calc(50% - 80px);
+  text-align: right;
+}
+
+.topbar .rightSide button {
+  height: 32px;
+  width: 32px;
+  margin: 0 0 0 20px;
+  display: inline-block;
+  background: none;
+  padding: 0;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.topbar .rightSide button i {
+  display: inline-block;
+  line-height: 32px;
+  height: 32px;
+  font-size: 24px;
+  color: #888;
+}
+
+.topbar .rightSide button.prfile_button {
+  height: 36px;
+  width: auto;
+  margin: 0 0 0 20px;
+  display: inline-block;
+  border-radius: 0;
+  background: none;
+  padding: 0;
+  line-height: 36px;
+  color: #444;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.topbar .rightSide button .menu_profile {
+  float: left;
+  margin: 0 10px 0 0;
+  height: 36px;
+  width: 36px;
+  border-radius: 50%;
+}
+
+.topbar .profile_menu {
+  position: fixed;
+  right: 15px;
+  top: 55px;
+  height: auto;
+  width: auto;
+  padding: 0;
+  transform: scale(0);
+  transform-origin: top right;
+  transition-duration: 0.1s;
+}
+
+.topbar .profile_menu.active {
+  transform: scale(1);
+  transition-duration: 0.3s;
+}
+
+.topbar .profile_menu a {
+  display: block;
+  height: 34px;
+  line-height: 34px;
+  padding: 0 15px;
+  margin: 5px 0;
+  font-size: 14px;
+  min-width: 150px;
+  text-align: left;
+}
+
+.center {
+  text-align: center;
+  height: 50px;
+}
+
+.statcards {
+  height: auto;
+  color: #444;
+  display: inline-block;
+  margin: 30px 15px 0 15px;
+  width: 340px;
+  text-align: left;
+}
+
+.statcards.bgfacebook {
+  color: #fff;
+  background: #3e519c;
+  background: linear-gradient(to right, #6e81cc, #1e216c);
+  box-shadow: none;
+}
+
+.statcards.bgtwitter {
+  color: #fff;
+  background: #00b5ee;
+  background: linear-gradient(to right, #00b5ee, #0085ae);
+  box-shadow: none;
+}
+
+.statcards.bginstagram {
+  color: #fff;
+  background: #464646;
+  background: linear-gradient(to right, #565656, #060606);
+  box-shadow: none;
+}
+
+.statcards .left {
+  float: left;
+  width: calc(100% - 110px);
+}
+
+.statcards .subtitle,
+.statcards .duration {
+  font-size: 14px;
+  font-weight: 600;
+  display: block;
+  line-height: 35px;
+  margin: 0;
+}
+
+.statcards .duration.second {
+  line-height: 25px;
+}
+
+.statcards .title {
+  font-size: 30px;
+  font-weight: 400;
+  display: block;
+  line-height: 45px;
+  margin: 0;
+}
+
+.statcards .duration {
+  opacity: 0.7;
+}
+
+.statcards .right {
+  width: 100px;
+  float: right;
+}
+
+.statcards .right i,
+.statcards .right img {
+  height: 80px;
+  line-height: 80px;
+  width: 80px;
+  display: block;
+  margin: 10px;
+  font-size: 50px;
+  text-align: center;
+}
+
+.statcards .right i {
+  background: rgba(150, 150, 150, 0.1);
+  border-radius: 50%;
+}
+
+.chart-areas {
+  margin-left: -8px;
+  margin-right: -8px;
+}
+.chart-areas > div {
+  padding-left: 8px;
+  padding-right: 8px;
+}
+.chart-areas .chart-box {
+  background: #ffffff;
+  border-radius: 15px;
+  padding: 35px;
+  min-height: 400px;
+}
+.chart-areas .chart-box .chart-head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.chart-areas .chart-box .chart-head .title-sm {
+  font: 500 16px/25px Poppins;
+  color: #393939;
+}
+.chart-areas .chart-box .chart-head .title-sm .strong {
+  color: #0075e9;
+  font: 500 24px/35px Poppins;
+}
+.chart-areas .chart-box .chart {
+  margin-top: 25px;
+}

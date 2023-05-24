@@ -1,0 +1,253 @@
+.imgs {
+  max-width: 100%;
+  display: block;
+}
+ul {
+  list-style: none;
+}
+
+/* Utilities */
+.card::after,
+.card .imgs {
+  border-radius: 50%;
+}
+
+.card {
+  padding: 2.5rem 2rem;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.5);
+  flex-direction: column;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.15);
+  margin-top: 10%;
+  position: relative;
+  transform-style: preserve-3d;
+  overflow: hidden;
+}
+.card::before,
+.card::after {
+  content: '';
+  position: absolute;
+  z-index: -1;
+}
+.card::before {
+  width: 100%;
+  height: 100%;
+  border: 1px solid #fff;
+  border-radius: 10px;
+  top: -0.7rem;
+  left: -0.7rem;
+}
+.card::after {
+  height: 15rem;
+  width: 15rem;
+  background-color: #4172f5aa;
+  top: -8rem;
+  right: -8rem;
+  box-shadow: 2rem 6rem 0 -3rem #fff;
+}
+
+.card .imgs {
+  width: 8rem;
+  min-width: 80px;
+  box-shadow: 0 0 0 5px #fff;
+}
+@media (max-width: 1000px) {
+  .card {
+    max-width: 90%;
+    padding: 15px;
+  }
+
+  .card-title {
+    font-size: 24px;
+  }
+
+  .name h2 {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .name h2 {
+    font-size: 16px;
+  }
+}
+.infos {
+  margin-left: 1.5rem;
+}
+
+.name {
+  margin-bottom: 1rem;
+}
+.name h2 {
+  font-size: 1.3rem;
+}
+.name h4 {
+  font-size: 0.8rem;
+  color: #333;
+}
+
+.text {
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+.stats {
+  margin-bottom: 1rem;
+}
+.stats li {
+  min-width: 5rem;
+}
+.stats li h3 {
+  font-size: 0.99rem;
+}
+.stats li h4 {
+  font-size: 0.75rem;
+}
+
+.links button {
+  font-family: 'Poppins', sans-serif;
+  min-width: 120px;
+  padding: 0.5rem;
+  border: 1px solid #222;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.25s linear;
+}
+.links .follow,
+.links .view:hover {
+  background-color: #222;
+  color: #fff;
+}
+.links .view,
+.links .follow:hover {
+  background-color: transparent;
+  color: #222;
+}
+
+@media screen and (max-width: 450px) {
+  .card {
+    display: block;
+  }
+  .infos {
+    margin-left: 0;
+    margin-top: 1.5rem;
+  }
+  .links button {
+    min-width: 100px;
+  }
+}
+.checkbox-group {
+  margin-top: 25px;
+}
+
+.checkbox-group label {
+  display: flex;
+}
+
+.checkbox-group label::before {
+  content: '\0020';
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 16px;
+  height: 16px;
+  margin-right: 8px;
+  border: 1px solid #d2d6db;
+  border-radius: 6px;
+  transition: background 0.1s ease-in;
+}
+
+.checkbox-group input[type='checkbox'] {
+  /* ici on ne doit pas mettre de display: none afin de pouvoir "tabber" */
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  /* margin: -1px; */
+  /* overflow: hidden; */
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+.checkbox-group input[type='checkbox']:focus + label:before {
+  border-color: #5850eb;
+}
+.checkbox-group input[type='checkbox']:checked + label:before {
+  color: #fff;
+  content: '\2713';
+  background: #5850eb;
+  border-color: #5850eb;
+}
+
+.grids {
+  grid-gap: 24px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-auto-rows: 1fr;
+}
+
+.student-profile .cards-table {
+  border-radius: 10px;
+  padding-top: 3em;
+  margin: auto;
+}
+
+.student-profile .cards-table .profile_img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  margin: 10px auto;
+  border: 10px solid #ccc;
+  border-radius: 50%;
+}
+
+.student-profile .cards-table h3 {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.student-profile .cards-table p {
+  font-size: 20px;
+  color: #000;
+}
+
+.student-profile .table th,
+.student-profile .table td {
+  font-size: 18px;
+  padding: 5px 10px;
+  color: #000;
+}
+
+.profile {
+  background-color: #fff;
+  border-radius: 18px;
+  box-shadow: 1px 1px 8px 0 grey;
+  height: auto;
+  margin-bottom: 20px;
+  padding: 20px 0 20px 50px;
+}
+.tables {
+  border: none;
+  font-size: 16px;
+  height: 270px;
+  width: 80%;
+}
+
+.edit {
+  position: absolute;
+  right: 14%;
+  font-size: 20px;
+}
+.table-disease {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+.table-row {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+.table-column:nth-child(even) {
+  background-color: #dddddd;
+}

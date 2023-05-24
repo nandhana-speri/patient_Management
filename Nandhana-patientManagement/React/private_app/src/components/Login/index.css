@@ -1,0 +1,114 @@
+img {
+  width: 100%;
+}
+.login {
+  height: 600px;
+  width: 50%;
+  position: relative;
+margin:auto
+}
+.login_box {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 1px 4px 22px -8px #0004;
+  display: flex;
+  overflow: hidden;
+}
+
+.login_box .left {
+  width: 100%;
+  /* height: 100%; */
+  padding: 25px 25px;
+}
+.login_box .right {
+  width: 109%;
+  height: 100%;
+}
+.left .top_link a {
+  color: #452a5a;
+  font-weight: 400;
+}
+.left .top_link {
+  height: 20px;
+}
+.left .contact {
+
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+  height: 100%;
+  width: 73%;
+  margin: auto;
+}
+.left h3 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+.left .input {
+
+  border: solid 1px black;
+  width: 60%;
+  margin: 65px 0px;
+  margin-bottom: 0px;
+  border-bottom: 1px solid #4f30677d;
+  padding: 7px 9px;
+  width: 80%;
+  background: transparent;
+  font-weight: 600;
+  font-size: 14px;
+}
+.left {
+  background: linear-gradient(-45deg, #dcd7e0, #fff);
+}
+.submit {
+  border: none;
+  padding: 15px 70px;
+  border-radius: 8px;
+  display: block;
+  margin: auto;
+  margin-top: 120px;
+  background: #583672;
+  color: #fff;
+  font-weight: bold;
+  -webkit-box-shadow: 0px 9px 15px -11px rgba(88, 54, 114, 1);
+  -moz-box-shadow: 0px 9px 15px -11px rgba(88, 54, 114, 1);
+  box-shadow: 0px 9px 15px -11px rgba(88, 54, 114, 1);
+}
+
+.top_link img {
+  width: 28px;
+  padding-right: 7px;
+  margin-top: -3px;
+}
+/* adjust the layout for screens smaller than 768px */
+@media (max-width: 768px) {
+  .login {
+    height: 1000px;
+    width: 70%;
+    position: relative;
+    margin: 0% 20%;
+  }
+  .login_box {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .right-inductor img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* or object-fit: contain */
+  }
+
+  .right-inductor {
+    border: 5px solid #000;
+    box-sizing: border-box;
+    padding: 5px;
+    height: 300px;
+  }
+}

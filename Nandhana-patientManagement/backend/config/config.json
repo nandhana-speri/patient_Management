@@ -1,0 +1,75 @@
+{
+  "development": {
+    "database": {
+      "username": "postgres",
+      "password": "postgres",
+      "database": "patientManagement",
+      "host": "localhost",
+      "dialect": "postgres",
+      "port": 5432,
+      "logging": false
+    },
+    "stripe": {
+      "publishable_key": "pk_test_51MpQqhSDycYJme4ZRpGd51G9WmVgizyf2AWGuWX4GzSKlABehNgBAS656zJEKbXf3aPKoaCbmAAEIqBKzXVGeoFK00WfcOlP34",
+      "secret_key": "sk_test_51MpQqhSDycYJme4ZPy5xodZMBB0nMsW3aZrAqxUxcZdYJKHHvMcGnBSqLRlfpEgn8HweJ9BDqe87K1C32bgFFWUZ00qZa9DUlx"
+    },
+
+    "jwts": {
+      "secret_key": "secret_key"
+    },
+    "mail": {
+      "host": "smtp.gmail.com",
+      "service": "gmail",
+      "email": "nandhana@spericorn.com",
+      "password": "Nandhana@123"
+    },
+    "docusign": {
+      "integrationKey": "2d9c55d5-c698-426c-86a3-19f661fab4ec",
+      "basePath": "https://demo.docusign.net/restapi",
+      "userId": "207a6407-bb6e-4282-841e-4460557c3629",
+      "accountId": "c733f070-3377-4d21-a27f-143ab8b5f947",
+      "templateId": "234f8e90-19d0-43f9-a857-9e75b96e3a02",
+      "clientUserId": "2000"
+    }
+  },
+  "local": {
+    "database": {
+      "username": "postgres",
+      "password": "postgres",
+      "database": "patientManagement",
+      "host": "localhost",
+      "dialect": "postgres",
+      "port": 5432,
+      "logging": false
+    },
+    "stripe": {
+      "publishable_key": "pk_test_51MqCz1SBop0VNSTwrTobj2FtJY6B4hntIoY9Xtzbw3ZAtE9AmOPMLnlBfk0NGaHoKwJMNDz4O85FV9o0VplyfV8W00Dta66sJy",
+      "secret_key": "sk_test_51MqCz1SBop0VNSTwhQw0rlY51tak4I7QbY6LszYZZ78MjcZiDGawlTv9pg4dzXV14Fq0V68xYcdBxtnVqw7Gnkma00cJf8miXA"
+    },
+
+    "jwts": {
+      "secret_key": "secret_key"
+    },
+    "mail": {
+      "host": "smtp.gmail.com",
+      "service": "gmail",
+      "email": "nandhana@spericorn.com",
+      "pass": "Nandhana@123"
+    },
+    "docusign": {
+      "integrationKey": "2d9c55d5-c698-426c-86a3-19f661fab4ec",
+      "basePath": "https://demo.docusign.net/restapi",
+      "userId": "207a6407-bb6e-4282-841e-4460557c3629",
+      "accountId": "c733f070-3377-4d21-a27f-143ab8b5f947",
+      "templateId": "234f8e90-19d0-43f9-a857-9e75b96e3a02",
+      "clientUserId": "2000"
+    },
+    "crypto": {
+      "key": "my-secret-key"
+    },
+    "nodeCorn": {
+      "NODE_ENV": "development",
+      "CRON": true
+    }
+  }
+}
