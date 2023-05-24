@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import ConsultationVerifyCert from '../blockchain/Consultation';
 import VaccinationVerifyCert from '../blockchain/Vaccination';
 import Web3 from 'web3';
-import CertificateDetailsModal from './modal';
+// import CertificateDetailsModal from './modal';
 import { setErrorMessage, setSuccessMessage } from '../../action';
 import { useDispatch, useSelector } from 'react-redux';
 
